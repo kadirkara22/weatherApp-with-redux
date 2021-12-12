@@ -1,0 +1,22 @@
+.selectContainer {
+  margin: 0 10px;
+}
+.select {
+  font-size: 20px;
+  width: 375px;
+  height: 50px;
+  border: 2px solid rgba(252, 248, 248, 0.301);
+  border-radius: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  color: white;
+  background-color: #2f90be;
+  padding-left: 20px;
+}
+.select:focus {
+  outline: none;
+}
+.option {
+}
