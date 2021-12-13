@@ -14,9 +14,8 @@
   color: white;
   background-color: #2f90be;
   padding-left: 20px;
+  cursor: pointer;
 }
 .select:focus {
   outline: none;
-}
-.option {
 }

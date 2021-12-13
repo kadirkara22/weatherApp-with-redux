@@ -1,6 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import "./days.css"
 const Days = () => {
+    const countryName = useSelector(state => state.weathers.countryName)
+    console.log(countryName)
+
     return (
         <div className="daysContainer">
             <div className="dayContent">
