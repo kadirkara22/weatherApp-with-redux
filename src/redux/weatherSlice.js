@@ -6,7 +6,8 @@ export const weatherSlice = createSlice({
     initialState: {
         countryList: citiesInTurkey,
         countryName: null,
-        items: []
+        items: [],
+        countryData: []
 
     },
     reducers: {
@@ -17,10 +18,14 @@ export const weatherSlice = createSlice({
         getCountry: (state, action) => {
             const data = action.payload
             state.items = data;
+        },
+        getSelectCountry: (state, action) => {
+            const data = action.payload;
+            state.countryData = data;
         }
     },
     extraReducers: {}
 })
 
-export const { selectCountry, getCountry } = weatherSlice.actions;
+export const { selectCountry, getCountry, getSelectCountry } = weatherSlice.actions;
 export default weatherSlice.reducer;

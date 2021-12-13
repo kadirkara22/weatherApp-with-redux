@@ -4,4 +4,42 @@
   justify-content: center;
   flex-direction: column;
   color: white;
+  margin: 10px 0;
+}
+.todayInfo {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.countryName {
+  font-size: 50px;
+}
+.durum {
+  height: 65px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.derece {
+  display: flex;
+  flex: 1.5;
+  width: 100%;
+  font-size: 100px;
+  justify-content: center;
+}
+.durumIcon {
+  display: flex;
+  flex: 1.5;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wind {
+  display: flex;
+  flex: 1.5;
+  align-items: center;
+  justify-content: center;
 }

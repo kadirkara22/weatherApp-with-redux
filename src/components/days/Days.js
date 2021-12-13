@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
 import "./days.css"
 const Days = () => {
@@ -12,7 +12,7 @@ const Days = () => {
 
     }
 
-    console.log(items.daily)
+
     if (!items.daily) {
         return <div></div>
     }
