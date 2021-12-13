@@ -27,16 +27,6 @@ const Konum = () => {
         }
     }
 
-    /*     const getCountryData = async () => {
-    
-            try {
-                const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${countryName}&appid=${apiKey}`)
-                dispatch(getCountry(data))
-            } catch {
-                console.log("city veri alınamadı")
-            }
-        }
-     */
     const getWeatherDailyData = async (lat, lon) => {
 
         try {
@@ -62,7 +52,7 @@ const Konum = () => {
 
             <div className="countryName">{items.timezone}</div>
             <div className="durum">{items.current.weather.map(item => item.description).join(", ")}</div>
-            <div className="derece">{items.current.temp}°</div>
+            <div className="derece">{Math.floor(items.current.temp)}°</div>
         </div>
     )
 }
